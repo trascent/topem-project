@@ -14,6 +14,7 @@ class Bill extends Model
      *
      * @var array
      */
+
     protected $fillable = [
         'number', 
         'emisor_name', 
@@ -43,6 +44,6 @@ class Bill extends Model
      */
     public function productPurchases()
     {
-        return $this->hasMany(ProductPurchase::class, 'bill_id');;
+        return $this->hasMany(PurchasedProduct::class, 'bill_id');;
     }
 }
