@@ -170,6 +170,6 @@ class BillService extends Controller
         $bill->productPurchases()->delete();
         // - Eliminar factura
         $bill->delete();
-        return Redirect::to('/back-office/users');
+        return response()->json("success", 200);
     }
 }
