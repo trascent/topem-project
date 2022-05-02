@@ -15,6 +15,6 @@ class BillSeeder extends Seeder
     public function run()
     {
         // Agregar facturas
-        Bill::factory()->times(rand(5, 10))->create();
+        Bill::factory()->times(5)->create();
     }
 }

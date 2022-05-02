@@ -15,6 +15,6 @@ class ProductSeeder extends Seeder
     public function run()
     {
         // Agregar productos
-        Product::factory()->times(rand(5, 10))->create();
+        Product::factory()->times(2)->create();
     }
 }

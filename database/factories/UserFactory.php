@@ -24,6 +24,7 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
+            'username' => 'admin',
             'name' => 'admin',
             'email' => 'admin@example.com',
             'email_verified_at' => now(),

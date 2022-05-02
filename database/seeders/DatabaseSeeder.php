@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,5 +22,7 @@ class DatabaseSeeder extends Seeder
             // Productos comprados Base
             PurchasedProductSeeder::class,
         ]);
+        //Agregar usuario de autenticación
+        User::factory()->times(1)->create();
     }
 }

@@ -15,6 +15,6 @@ class PurchasedProductSeeder extends Seeder
     public function run()
     {
         // Agregar productos
-        PurchasedProduct::factory()->times(15)->create();
+        PurchasedProduct::factory()->times(5)->create();
     }
 }

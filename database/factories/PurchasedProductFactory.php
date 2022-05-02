@@ -23,11 +23,10 @@ class PurchasedProductFactory extends Factory
      */
     public function definition()
     {
-        $bills = Bill::pluck('number')->all();
+        $bills = Bill::pluck('id')->all();
         $products = Product::pluck('id')->all();
         return [
             'quantity' => $this->faker->unique()->randomNumber(2),
-            'total_price' => $this->faker->unique()->randomNumber(6),
             'bill_id' => $this->faker->randomElement($bills),
             'product_id' => $this->faker->randomElement($products)
         ];

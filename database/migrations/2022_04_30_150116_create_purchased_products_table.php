@@ -16,10 +16,8 @@ class CreatePurchasedProductsTable extends Migration
         Schema::create('purchased_products', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->integer('quantity');
-            $table->decimal('total_price', 8, 2, true);
             $table->foreignId('product_id')->references('id')->on('products');
-            $table->bigInteger('bill_id');
-            $table->foreign('bill_id')->references('number')->on('bills');
+            $table->foreignId('bill_id')->references('id')->on('bills');
             $table->timestamps();
         });
     }
