@@ -1,3 +1,22 @@
+# API RESTful Backend
+
+## Arquitectura
+- Composer - v2.0.8
+- Laravel - v8
+
+## Instalación
+
+`composer install`
+
+Instalación de todas las dependencias necesarias para correr el proyecto
+
+1. Copiar .env.example y redefinir .env a partir de el (Creación de BD MYSQL).
+2. Usar `php artisan jwt:secret` para generar la llave para firmar los tokens JWT.
+3. Utilizar el comando  `php artisan migrate:refresh --seed` para realizar las migraciones y seeders correspondientes para montar y registrar datos en la BD.
+4. Si es necesario limpiar la cache de la configuración del proyecto y de las rutas utilizando `php artisan route:cache` y `php artisan config:cache`.
+5. Iniciar entorno `php artisan serve`
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
