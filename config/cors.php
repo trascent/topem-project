@@ -21,7 +21,7 @@ return [
 
     'allowed_origins' => ['*'],
 
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => env('ALLOWED_ORIGINS_PATTERNS') == '' ? [] : explode(',', env('ALLOWED_ORIGINS_PATTERNS', '')),
 
     'allowed_headers' => ['*'],
 
