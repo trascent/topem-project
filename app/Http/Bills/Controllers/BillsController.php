@@ -19,7 +19,7 @@ class BillsController extends Controller
     }
 
     /**
-     * Controlador para llamar el servicio de usuarios para guardar un usuario
+     * Controlador para llamar el servicio de facturas para guardar un usuario
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(BillService $billService, Request $request)
@@ -58,7 +58,7 @@ class BillsController extends Controller
     }
 
     /**
-     * Controlador para llamar el servicio de usuarios para eliminar una compañía
+     * Controlador para llamar el servicio de facturas para eliminar una factura
      * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(BillService $billService, int $id)
